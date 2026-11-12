@@ -1,0 +1,7 @@
+﻿mục,giá trị
+đặc tả,"OLS log1p(đơn giá) ~ ln_dien_tich, ln_mat_tien, ln_chieu_dai, so_mat_tien, ln1p_do_rong_ngo, ln1p_khoang_cach + one-hot Xã/Phường/Thị trấn mới, Vùng, Vị trí trong khung giá, Lợi thế kinh doanh, hinh_dang_sach, Quý_Năm"
+"n, k","34772, 234"
+"R2 (thang log, train)",0.9217
+cột bị bỏ do cộng tuyến hoàn hảo,(không)
+mức tham chiếu,"{""Xã/Phường/Thị trấn mới"": ""phường thới hòa"", ""Vùng"": ""hcm1"", ""Vị trí trong khung giá"": ""vt1"", ""Lợi thế kinh doanh"": ""trung bình"", ""hinh_dang_sach"": ""cân đối"", ""Quý_Năm"": ""q3-2025""}"
+dòng test có mức chưa gặp trong train (gán = tham chiếu),"{""Xã/Phường/Thị trấn mới"": 0, ""Vùng"": 0, ""Vị trí trong khung giá"": 0, ""Lợi thế kinh doanh"": 0, ""hinh_dang_sach"": 0, ""Quý_Năm"": 0}"

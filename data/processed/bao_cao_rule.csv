@@ -1,0 +1,26 @@
+﻿ma_rule,so_dong_tac_dong,cot_bi_sua
+B2_khu_trung_lap,6418,"14 cột làm sạch + target, giữ bản có ngày hiệu lực muộn nhất"
+B4_vt5_gop_vt4,4,Vị trí trong khung giá
+B4_smt_nan,21,Số mặt tiền tiếp giáp
+B4_do_rong_0_nan,3,Độ rộng ngõ/ngách nhỏ nhất (Từ đường chính đến BĐS)
+B4_mt_0_nan,1,Kích thước mặt tiền (m)
+B4_kc_qua_lon_nan,1,Khoảng cách đến đường chính (m)
+B4_quan_huyen_doi_ten,1,Thành phố/Quận/Huyện/Thị xã
+B4_doan_duong_gop_cach_viet,180,Đoạn đường
+B4_yeu_to_khac_so_nan,18,Yếu tố khác
+B4_hinh_dang_so_nan,8,hinh_dang_sach
+B4_hinh_dang_sua_chinh_ta,35,hinh_dang_sach
+B4_hinh_dang_khong_phai_hinh_dang_nan,7,hinh_dang_sach
+B4_hinh_dang_thong_nhat_cach_viet,218,hinh_dang_sach
+B4_chi_tiet_tach_y,36286,Chi tiết
+B5_sua1_vt,150,Vị trí trong khung giá
+B5_sua1_kc,12,Khoảng cách đến đường chính (m)
+B5_sua2_kc_nan,736,Khoảng cách đến đường chính (m)
+B5_canh_bao_vt1,426,"chỉ gắn cờ, không sửa"
+B5_canh_bao_mt_vt234,1805,"chỉ gắn cờ, không sửa"
+B6_sua3_mt_bang_dt,2,Kích thước mặt tiền (m)
+B6_sua3_cd_bang_dt,3,Kích thước chiều dài
+B7_khu_trung_lap_lan_2,5,14 cột + target sau khi làm sạch (Chi tiết so ở dạng chữ trước khi tách)
+B8_chi_so_ngo_khac_cong_ty,0,Chi_so_ngo
+B8_chi_so_dientich_khac_cong_ty,0,Chi_so_dientich
+B8_chi_so_hinhdang_khac_cong_ty,136,Chi_so_hinhdang

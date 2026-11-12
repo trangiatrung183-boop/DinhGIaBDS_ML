@@ -1,0 +1,7 @@
+﻿mô hình,cấu hình,learning_rate,max_leaf_nodes,min_samples_leaf,l2_regularization,max_features,best_iter,giây,MAPE Val
+HistGradientBoosting,0,0.1,31,20,0.0,0.8,5000,349.3,9.353857429430189
+HistGradientBoosting,1,0.05,31,20,1.0,0.5,5000,330.1,9.56762256550826
+HistGradientBoosting,2,0.1,255,5,0.0,0.5,1825,577.1,9.166878689241045
+HistGradientBoosting,3,0.05,63,20,1.0,0.8,5000,521.8,9.10388320111188
+HistGradientBoosting,4,0.05,255,10,0.0,0.8,3736,1157.9,8.953665672708297
+HistGradientBoosting,5,0.1,255,20,1.0,1.0,1468,512.6,9.123177501593396

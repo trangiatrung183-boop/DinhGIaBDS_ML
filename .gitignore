@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Model LightGBM dạng text 110 MB vượt giới hạn 100 MB của GitHub; repo giữ bản nén .gz
+02_mo_hinh/LightGBM/model/lightgbm_model.txt
+02_mo_hinh/checkpoints/models/
+
+# Ma trận đặc trưng (~19 MB), tự sinh lại khi chạy chay_mo_hinh.py
+02_mo_hinh/checkpoints/features_*.joblib
+
+# File tạm của Excel
+~$*.xlsx

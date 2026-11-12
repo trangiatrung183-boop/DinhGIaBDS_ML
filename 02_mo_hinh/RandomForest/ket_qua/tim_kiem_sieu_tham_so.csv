@@ -1,0 +1,7 @@
+﻿mô hình,cấu hình,max_features,min_samples_leaf,max_depth,best_iter,giây,MAPE Val
+RandomForest,0,0.5,2,None,,31.0,16.81684090558699
+RandomForest,1,0.2,2,None,,19.4,19.22206437087069
+RandomForest,2,0.33,5,None,,21.4,20.095448548749015
+RandomForest,3,0.5,5,None,,32.0,18.85859276220951
+RandomForest,4,sqrt,5,None,,6.0,32.32198403015303
+RandomForest,5,0.33,1,None,,28.2,16.767963566981273

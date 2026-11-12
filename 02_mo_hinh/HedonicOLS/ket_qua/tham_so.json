@@ -1,0 +1,21 @@
+{
+  "mo_hinh": "Hedonic OLS",
+  "nguon": "02_mo_hinh/checkpoints/m_hedonic.joblib (sinh bởi 02_mo_hinh/chay_mo_hinh.py)",
+  "tham_so_chon": {
+    "spec": "OLS log1p(đơn giá) ~ ln_dien_tich, ln_mat_tien, ln_chieu_dai, so_mat_tien, ln1p_do_rong_ngo, ln1p_khoang_cach + one-hot Xã/Phường/Thị trấn mới, Vùng, Vị trí trong khung giá, Lợi thế kinh doanh, hinh_dang_sach, Quý_Năm"
+  },
+  "best_iter": null,
+  "giay_huan_luyen": 2.3,
+  "n": 34772,
+  "k": 234,
+  "R2_log_train": 0.9217113926297269,
+  "ref_levels": {
+    "Xã/Phường/Thị trấn mới": "phường thới hòa",
+    "Vùng": "hcm1",
+    "Vị trí trong khung giá": "vt1",
+    "Lợi thế kinh doanh": "trung bình",
+    "hinh_dang_sach": "cân đối",
+    "Quý_Năm": "q3-2025"
+  },
+  "dropped": []
+}

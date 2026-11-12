@@ -1,0 +1,14 @@
+{
+  "mo_hinh": "HistGradientBoosting",
+  "nguon": "02_mo_hinh/checkpoints/m_hgb.joblib (sinh bởi 02_mo_hinh/chay_mo_hinh.py)",
+  "tham_so_chon": {
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 255,
+    "min_samples_leaf": 10,
+    "l2_regularization": 0.0,
+    "max_features": 0.8
+  },
+  "best_iter": 3736,
+  "giay_huan_luyen": 1157.9,
+  "cau_hinh_chon": 4
+}

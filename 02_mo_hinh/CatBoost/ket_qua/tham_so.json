@@ -1,0 +1,13 @@
+{
+  "mo_hinh": "CatBoost",
+  "nguon": "02_mo_hinh/checkpoints/m_catboost.joblib (sinh bởi 02_mo_hinh/chay_mo_hinh.py)",
+  "tham_so_chon": {
+    "depth": 8,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 3,
+    "one_hot_max_size": 10
+  },
+  "best_iter": 4997,
+  "giay_huan_luyen": 478.1,
+  "cau_hinh_chon": 1
+}

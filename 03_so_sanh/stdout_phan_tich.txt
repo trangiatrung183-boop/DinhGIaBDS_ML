@@ -1,0 +1,190 @@
+             mô hình   tập   vùng     n     R2        MAE       RMSE  MAPE  MdAPE  MPE (dự đoán−thực, %)  ME (dự đoán−thực, đ/m²)  APE<10%  APE<15%  APE<20%
+       LightGBM (A1) Train Tất cả 34772 0.9998   615330.0  1213279.0  0.89   0.45                   0.03                 -41496.0     99.1     99.5     99.7
+       LightGBM (A1) Train   HCM1 22294 0.9998   768491.0  1389509.0  0.66   0.45                   0.00                 -49626.0    100.0    100.0    100.0
+       LightGBM (A1) Train   HCM2 12478 0.9990   341684.0   807788.0  1.30   0.45                   0.08                 -26970.0     97.6     98.5     99.0
+       LightGBM (A1)   Val Tất cả  8694 0.9299  8071219.0 24208368.0  8.69   5.59                   1.01               -1224627.0     71.2     83.7     90.4
+       LightGBM (A1)   Val   HCM1  5575 0.9124 10508577.0 29545931.0  7.73   5.27                   0.81               -1586687.0     74.7     87.1     93.5
+       LightGBM (A1)   Val   HCM2  3119 0.9050  3714609.0  8555730.0 10.42   6.32                   1.36                -577470.0     64.9     77.7     84.7
+       LightGBM (A1)  Test Tất cả   693 0.9492  8367905.0 17699783.0  9.51   6.71                  -0.54                -962749.0     64.1     79.1     88.6
+       LightGBM (A1)  Test   HCM1   435 0.9348 10739870.0 21689872.0  8.67   6.02                  -1.12               -1122673.0     67.8     82.5     90.8
+       LightGBM (A1)  Test   HCM2   258 0.9226  4368662.0  6949054.0 10.94   8.21                   0.44                -693109.0     57.8     73.3     84.9
+         Hedonic OLS Train Tất cả 34772 0.8153 16416726.0 37293484.0 17.46  12.80                   2.76               -2409676.0     40.6     56.3     68.3
+         Hedonic OLS Train   HCM1 22294 0.7657 21582765.0 45567802.0 16.00  11.56                   2.37               -2965408.0     44.4     60.4     72.2
+         Hedonic OLS Train   HCM2 12478 0.7506  7186748.0 12877499.0 20.08  15.39                   3.45               -1416771.0     33.8     48.9     61.2
+         Hedonic OLS   Val Tất cả  8694 0.8206 17268507.0 38733337.0 17.76  12.97                   2.93               -2453064.0     40.1     56.0     67.1
+         Hedonic OLS   Val   HCM1  5575 0.7778 22661999.0 47063750.0 16.37  11.69                   2.60               -2944586.0     43.8     59.9     71.2
+         Hedonic OLS   Val   HCM2  3119 0.7109  7628006.0 14924772.0 20.25  15.46                   3.52               -1574500.0     33.5     48.9     59.8
+         Hedonic OLS  Test Tất cả   693 0.8622 14841066.0 29148257.0 15.79  11.78                   2.97                 180299.0     43.3     60.0     68.1
+         Hedonic OLS  Test   HCM1   435 0.8230 19303785.0 35749181.0 14.68   9.78                   3.03                 810086.0     51.0     65.3     70.8
+         Hedonic OLS  Test   HCM2   258 0.7959  7316715.0 11284816.0 17.67  14.77                   2.87                -881550.0     30.2     51.2     63.6
+       Random Forest Train Tất cả 34772 0.9633  6369777.0 16626443.0  6.20   4.02                   0.36               -2815214.0     80.4     90.7     95.5
+       Random Forest Train   HCM1 22294 0.9532  8600408.0 20365756.0  6.02   4.06                   0.29               -3804446.0     80.8     91.5     96.3
+       Random Forest Train   HCM2 12478 0.9559  2384388.0  5412718.0  6.51   3.94                   0.48               -1047787.0     79.7     89.3     94.0
+       Random Forest   Val Tất cả  8694 0.7769 16803359.0 43188301.0 16.77  10.67                   2.81               -5786684.0     47.9     61.7     71.1
+       Random Forest   Val   HCM1  5575 0.7189 22780282.0 52936534.0 16.79  11.22                   2.94               -7674922.0     46.2     60.6     70.0
+       Random Forest   Val   HCM2  3119 0.7530  6120016.0 13795697.0 16.72   9.73                   2.57               -2411587.0     50.8     63.7     72.9
+       Random Forest  Test Tất cả   693 0.8347 16080667.0 31928351.0 16.52  11.30                  -2.34               -6824389.0     44.4     60.3     71.3
+       Random Forest  Test   HCM1   435 0.7893 21090441.0 39000976.0 16.08  11.14                  -1.16               -7882332.0     44.8     62.8     71.7
+       Random Forest  Test   HCM2   258 0.7218  7633955.0 13175863.0 17.27  11.40                  -4.32               -5040649.0     43.8     56.2     70.5
+HistGradientBoosting Train Tất cả 34772 0.9999   320265.0   845535.0  0.59   0.13                   0.03                 -20741.0     99.1     99.4     99.6
+HistGradientBoosting Train   HCM1 22294 0.9999   360767.0   881691.0  0.31   0.12                   0.00                 -20658.0    100.0    100.0    100.0
+HistGradientBoosting Train   HCM2 12478 0.9991   247902.0   776759.0  1.10   0.16                   0.09                 -20890.0     97.5     98.5     99.0
+HistGradientBoosting   Val Tất cả  8694 0.9303  8354986.0 24138960.0  8.95   5.72                   0.98               -1210004.0     69.7     82.8     89.6
+HistGradientBoosting   Val   HCM1  5575 0.9128 10923490.0 29489703.0  8.04   5.45                   0.77               -1620061.0     72.9     86.0     92.4
+HistGradientBoosting   Val   HCM2  3119 0.9094  3763960.0  8353447.0 10.59   6.23                   1.35                -477054.0     64.1     77.0     84.4
+HistGradientBoosting  Test Tất cả   693 0.9487  8706686.0 17786546.0  9.77   6.98                  -0.54               -1163414.0     64.9     80.1     87.9
+HistGradientBoosting  Test   HCM1   435 0.9343 11174883.0 21780929.0  8.89   6.48                  -1.35               -1617110.0     67.8     82.3     91.0
+HistGradientBoosting  Test   HCM2   258 0.9200  4545191.0  7062964.0 11.25   8.54                   0.84                -398462.0     60.1     76.4     82.6
+            CatBoost Train Tất cả 34772 0.9735  6942561.0 14119484.0  7.79   5.57                   0.53                -837321.0     73.4     86.5     93.2
+            CatBoost Train   HCM1 22294 0.9666  9180376.0 17201257.0  7.18   5.37                   0.51               -1027779.0     75.6     88.9     95.0
+            CatBoost Train   HCM2 12478 0.9595  2944337.0  5186991.0  8.87   5.97                   0.55                -497037.0     69.6     82.3     89.9
+            CatBoost   Val Tất cả  8694 0.8970 11369936.0 29350262.0 11.87   8.46                   1.35               -1861695.0     56.8     72.4     83.0
+            CatBoost   Val   HCM1  5575 0.8701 15084427.0 35980658.0 10.86   7.97                   1.28               -2355325.0     59.4     75.5     86.0
+            CatBoost   Val   HCM2  3119 0.8868  4730536.0  9336819.0 13.66   9.54                   1.49                -979366.0     52.2     66.9     77.5
+            CatBoost  Test Tất cả   693 0.9372 10294669.0 19684347.0 11.93   8.14                   1.15                 248837.0     57.0     71.1     82.1
+            CatBoost  Test   HCM1   435 0.9194 13358342.0 24116241.0 10.70   7.80                   0.78                 527820.0     60.5     74.7     86.0
+            CatBoost  Test   HCM2   258 0.9035  5129173.0  7757508.0 14.01   9.45                   1.77                -221541.0     51.2     65.1     75.6
+
+             mô hình           nhóm   n     R2        MAE       RMSE  MAPE  MdAPE  MPE (dự đoán−thực, %)  ME (dự đoán−thực, đ/m²)  APE<10%  APE<15%  APE<20%
+       LightGBM (A1) Có trong train  62 0.9543  6197727.0 26740537.0  6.26   3.50                   1.50                3188553.0     82.3     88.7     93.5
+       LightGBM (A1)         Mã mới 631 0.9477  8581140.0 16547063.0  9.83   7.12                  -0.74               -1370642.0     62.3     78.1     88.1
+         Hedonic OLS Có trong train  62 0.8487 22153943.0 48652665.0 19.78  15.79                   5.03               -6742162.0     33.9     50.0     59.7
+         Hedonic OLS         Mã mới 631 0.8661 14122527.0 26467341.0 15.40  11.46                   2.77                 860477.0     44.2     61.0     68.9
+       Random Forest Có trong train  62 0.9416 10406991.0 30218609.0  8.95   6.59                   0.74                  98585.0     66.1     79.0     90.3
+       Random Forest         Mã mới 631 0.8031 16638144.0 32091430.0 17.26  11.72                  -2.64               -7504618.0     42.3     58.5     69.4
+HistGradientBoosting Có trong train  62 0.9649  5903182.0 23443885.0  5.91   2.77                   0.06                2056780.0     79.0     91.9     96.8
+HistGradientBoosting         Mã mới 631 0.9439  8982149.0 17130160.0 10.15   7.36                  -0.59               -1479820.0     63.5     78.9     87.0
+            CatBoost Có trong train  62 0.9495  8992425.0 28098718.0  8.18   4.69                   2.69                4766289.0     77.4     88.7     91.9
+            CatBoost         Mã mới 631 0.9335 10422623.0 18653900.0 12.30   9.03                   1.00                -195033.0     55.0     69.4     81.1
+
+chỉ số              mô hình  MAPE Test  KTC95 thấp  KTC95 cao  Δ so với LightGBM  Δ KTC95 thấp  Δ KTC95 cao             kết luận
+  MAPE        LightGBM (A1)      9.515       8.815     10.208              0.000           NaN          NaN                    —
+  MAPE          Hedonic OLS     15.793      14.788     16.832              6.278         5.294        7.303     kém hơn LightGBM
+  MAPE        Random Forest     16.521      15.314     17.774              7.006         5.877        8.232     kém hơn LightGBM
+  MAPE HistGradientBoosting      9.767       9.061     10.505              0.252        -0.175        0.674 không phân biệt được
+  MAPE             CatBoost     11.934      11.118     12.791              2.419         1.767        3.091     kém hơn LightGBM
+
+             mô hình                         cách huấn luyện   vùng   n     R2        MAE       RMSE  MAPE  MdAPE  MPE (dự đoán−thực, %)  ME (dự đoán−thực, đ/m²)  APE<10%  APE<15%  APE<20%
+       LightGBM (A1) Gốc: train có q2-2026 (chia ngẫu nhiên) Tất cả 693 0.9492  8367905.0 17699783.0  9.51   6.71                  -0.54                -962749.0     64.1     79.1     88.6
+       LightGBM (A1) Gốc: train có q2-2026 (chia ngẫu nhiên)   HCM1 435 0.9348 10739870.0 21689872.0  8.67   6.02                  -1.12               -1122673.0     67.8     82.5     90.8
+       LightGBM (A1) Gốc: train có q2-2026 (chia ngẫu nhiên)   HCM2 258 0.9226  4368662.0  6949054.0 10.94   8.21                   0.44                -693109.0     57.8     73.3     84.9
+       LightGBM (A1)       Ngoài thời gian: train bỏ q2-2026 Tất cả 693 0.9358 10659501.0 19891784.0 11.97   8.96                  -5.15               -5474703.0     55.1     72.6     83.4
+       LightGBM (A1)       Ngoài thời gian: train bỏ q2-2026   HCM1 435 0.9184 13851430.0 24273978.0 11.49   8.96                  -5.94               -7033644.0     55.4     74.7     86.4
+       LightGBM (A1)       Ngoài thời gian: train bỏ q2-2026   HCM2 258 0.8888  5277759.0  8328305.0 12.79   8.93                  -3.80               -2846257.0     54.7     69.0     78.3
+HistGradientBoosting Gốc: train có q2-2026 (chia ngẫu nhiên) Tất cả 693 0.9487  8706686.0 17786546.0  9.77   6.98                  -0.54               -1163414.0     64.9     80.1     87.9
+HistGradientBoosting Gốc: train có q2-2026 (chia ngẫu nhiên)   HCM1 435 0.9343 11174883.0 21780929.0  8.89   6.48                  -1.35               -1617110.0     67.8     82.3     91.0
+HistGradientBoosting Gốc: train có q2-2026 (chia ngẫu nhiên)   HCM2 258 0.9200  4545191.0  7062964.0 11.25   8.54                   0.84                -398462.0     60.1     76.4     82.6
+HistGradientBoosting       Ngoài thời gian: train bỏ q2-2026 Tất cả 693 0.9264 10574675.0 21304553.0 11.53   8.28                  -3.73               -4202027.0     57.4     73.9     84.0
+HistGradientBoosting       Ngoài thời gian: train bỏ q2-2026   HCM1 435 0.9059 13770445.0 26067885.0 10.87   8.28                  -4.50               -5342693.0     59.1     76.3     86.2
+HistGradientBoosting       Ngoài thời gian: train bỏ q2-2026   HCM2 258 0.8823  5186458.0  8568924.0 12.66   8.23                  -2.44               -2278810.0     54.7     69.8     80.2
+
+                                 mục                                                                                                               giá trị
+         dòng train dùng (≠ q2-2026)                                                                                                                 40545
+                      chia train/val                                                                                             32436/8109 (seed 42, 0.2)
+  best_iter LightGBM ngoài thời gian                                                                                                                  3680
+mô hình còn lại (chọn theo Val MAPE)                                                                                                  HistGradientBoosting
+      tham số (giữ nguyên từ bước 3) {"learning_rate": 0.05, "max_leaf_nodes": 255, "min_samples_leaf": 10, "l2_regularization": 0.0, "max_features": 0.8}
+                               lưu ý                                               Quý_Năm=q2-2026 của tstd là mức chưa gặp khi huấn luyện ngoài thời gian
+
+                                cấu hình  số đặc trưng  best_iter  tập    n     R2        MAE       RMSE  MAPE  MdAPE  MPE (dự đoán−thực, %)  ME (dự đoán−thực, đ/m²)  APE<10%  APE<15%  APE<20%  Δ MAPE Test so với đầy đủ  Δ KTC95 thấp  Δ KTC95 cao  Δ APE<10% so với đầy đủ Δ APE<10% KTC95  Δ APE<15% so với đầy đủ Δ APE<15% KTC95
+                             Đầy đủ (A1)           646       3999  Val 8694 0.9299  8071219.0 24208368.0  8.69   5.59                   1.01               -1224627.0     71.2     83.7     90.4                        NaN           NaN          NaN                      NaN             NaN                      NaN             NaN
+                             Đầy đủ (A1)           646       3999 Test  693 0.9492  8367905.0 17699783.0  9.51   6.71                  -0.54                -962749.0     64.1     79.1     88.6                        NaN           NaN          NaN                      NaN             NaN                      NaN             NaN
+            a) bỏ Chi tiết + Yếu tố khác            13       3186  Val 8694 0.9354  8562824.0 23236479.0  9.49   6.01                   1.26               -1079039.0     67.2     80.7     88.6                        NaN           NaN          NaN                      NaN             NaN                      NaN             NaN
+            a) bỏ Chi tiết + Yếu tố khác            13       3186 Test  693 0.9664  8328363.0 14404916.0 10.01   7.27                   0.14                -468244.0     61.9     77.3     87.0                   0.496930     -0.091157     1.111290                -2.164502  [-5.48; +1.30]                -1.731602  [-4.47; +1.01]
+                         b) bỏ Đường phố           645       3289  Val 8694 0.9193  9636458.0 25980589.0 10.17   6.65                   1.27               -1430749.0     64.5     78.4     86.8                        NaN           NaN          NaN                      NaN             NaN                      NaN             NaN
+                         b) bỏ Đường phố           645       3289 Test  693 0.9413  9420172.0 19025803.0 10.30   6.87                  -0.24                -705412.0     63.2     76.3     85.1                   0.789613      0.341541     1.243183                -0.865801  [-3.90; +2.31]                -2.741703  [-5.34; -0.29]
+c) bỏ Chi tiết + Yếu tố khác + Đường phố            12       2258  Val 8694 0.9256 10420343.0 24944634.0 11.28   7.63                   1.54               -1411603.0     60.2     74.7     84.2                        NaN           NaN          NaN                      NaN             NaN                      NaN             NaN
+c) bỏ Chi tiết + Yếu tố khác + Đường phố            12       2258 Test  693 0.9530  9351746.0 17030406.0 11.04   7.89                   0.66                -259037.0     59.7     75.8     84.3                   1.522778      0.771461     2.298233                -4.329004  [-8.08; -0.43]                -3.318903  [-6.35; -0.29]
+
+           nhóm biến  số cột  mean |SHAP| (log)  mean SHAP (log)  mean |SHAP| HCM1  mean |SHAP| HCM2  tỷ trọng %
+                Vùng       1             0.5072          -0.0094            0.3966            0.6939     41.2596
+           Phường/xã       1             0.2576          -0.0072            0.2513            0.2682     20.9538
+         Độ rộng ngõ       1             0.1343           0.0014            0.1563            0.0971     10.9219
+           Diện tích       1             0.0563          -0.0050            0.0602            0.0497      4.5798
+           Đường phố       1             0.0508           0.0104            0.0511            0.0503      4.1323
+            Chi tiết      33             0.0434          -0.0053            0.0394            0.0502      3.5291
+           Chiều dài       1             0.0340           0.0025            0.0301            0.0405      2.7631
+         Khoảng cách       1             0.0307           0.0057            0.0320            0.0286      2.4980
+                 Quý       1             0.0305           0.0303            0.0322            0.0277      2.4841
+          Lợi thế KD       1             0.0280          -0.0067            0.0217            0.0387      2.2792
+            Mặt tiền       2             0.0230           0.0048            0.0217            0.0251      1.8679
+                  VT       1             0.0144           0.0048            0.0158            0.0122      1.1734
+TF-IDF (Yếu tố khác)     600             0.0129          -0.0045            0.0144            0.0104      1.0525
+           Hình dáng       1             0.0062          -0.0011            0.0071            0.0048      0.5052
+additivity 0.001828466329236278
+
+                  nhóm theo                  nhóm     khoảng đơn giá (đ/m²)   n      R2        MAE       RMSE  MAPE  MdAPE  MPE (dự đoán−thực, %)  ME (dự đoán−thực, đ/m²)  APE<10%  APE<15%  APE<20%               cảnh báo
+phân vị đơn giá thực (test)        Q1 (thấp nhất)    6,328,509 – 42,380,924 174  0.8419  2611427.0  3968617.0 10.65   7.15                   3.68                 626435.0     60.9     73.6     84.5                       
+phân vị đơn giá thực (test)                    Q2   42,380,924 – 70,943,321 173  0.2427  5297370.0  7342937.0  9.21   7.31                  -3.03               -1685215.0     64.2     80.9     89.0                       
+phân vị đơn giá thực (test)                    Q3  70,943,321 – 104,048,597 173 -0.3420  7365510.0 10121639.0  8.66   6.46                  -0.82                -669125.0     68.2     83.2     93.1                       
+phân vị đơn giá thực (test)         Q4 (cao nhất) 104,048,597 – 810,687,098 173  0.8990 18230590.0 32904906.0  9.54   6.68                  -2.00               -2132276.0     63.0     78.6     87.9                       
+                 quận/huyện         quận bình tân                            98  0.8243  7984273.0 12890256.0  8.82   6.36                  -3.91               -4498905.0     70.4     80.6     88.8                       
+                 quận/huyện               quận 12                            85  0.8275  6088910.0  8980768.0  8.35   6.02                  -5.10               -4094676.0     61.2     82.4     95.3                       
+                 quận/huyện          quận tân phú                            54  0.8895  8443519.0 12020262.0  7.23   5.97                  -1.13               -2898092.0     72.2     94.4     96.3                       
+                 quận/huyện    thành phố thuận an                            48  0.7449  3917755.0  6023954.0  8.53   6.65                  -3.15               -2226138.0     66.7     83.3     91.7                       
+                 quận/huyện         quận tân bình                            44  0.9231  9719001.0 12465644.0  7.32   4.46                   1.67                1637784.0     70.5     86.4     95.5                       
+                 quận/huyện thành phố thủ dầu một                            35  0.7615  3449505.0  5607626.0 10.56   6.85                  -0.49                -959242.0     65.7     71.4     85.7                       
+                 quận/huyện     thành phố bến cát                            33  0.9133  1728737.0  2243314.0 10.15   7.79                   2.59                 158849.0     63.6     69.7     84.8                       
+                 quận/huyện       thành phố dĩ an                            32  0.8391  4842586.0  6343606.0  8.97   8.36                  -2.50               -1843503.0     53.1     81.2     96.9                       
+                 quận/huyện       quận bình thạnh                            28  0.9220  9322689.0 11738343.0  7.33   6.26                   2.76                2890810.0     71.4     92.9     92.9                       
+                 quận/huyện     thành phố thủ đức                            28  0.7862 18792620.0 34383263.0 15.19   8.78                   2.99               -4980577.0     57.1     64.3     71.4                       
+                 quận/huyện           quận gò vấp                            23  0.8482  7763245.0 13958075.0  5.85   4.12                  -0.27               -1875556.0     82.6     82.6     91.3                       
+                 quận/huyện                quận 7                            21  0.9025 15992462.0 20987305.0 10.24   6.41                  -0.66               -2904776.0     52.4     71.4     90.5                       
+                 quận/huyện          huyện nhà bè                            18  0.9376  5896552.0  6997941.0  9.13   8.02                   0.92                 925978.0     61.1     88.9     88.9                       
+                 quận/huyện                quận 8                            17  0.6012 13199909.0 27605791.0 11.37   5.46                  -0.90               -5371837.0     64.7     76.5     76.5                       
+                 quận/huyện               quận 10                            17  0.9809  8171887.0 10440225.0  5.14   3.16                   0.63                 619422.0     88.2     94.1    100.0                       
+                 quận/huyện      huyện bình chánh                            17  0.7656  9506565.0 13585707.0 14.18  15.51                  -0.67               -2266199.0     41.2     47.1     64.7                       
+                 quận/huyện         huyện hóc môn                            14  0.3106  4182791.0  5691441.0  9.94   7.63                  -4.69               -2363302.0     64.3     78.6     85.7                       
+                 quận/huyện    thành phố tân uyên                            14  0.5812  3220938.0  3577463.0 14.48  16.76                   5.96                 868753.0     28.6     42.9     78.6                       
+                 quận/huyện    thành phố vũng tàu                            13  0.8222 11477127.0 15072800.0 14.35  12.08                   1.35                2098820.0     46.2     61.5     76.9                       
+                 quận/huyện                quận 3                             9  0.8134 54005474.0 95936781.0 14.87   5.89                  14.87               54005474.0     55.6     55.6     66.7 n<10: không đủ tin cậy
+                 quận/huyện        huyện châu đức                             9  0.9051  2899352.0  4243595.0 17.98  10.87                   9.65                 336094.0     44.4     66.7     66.7 n<10: không đủ tin cậy
+                 quận/huyện      thành phố phú mỹ                             8 -1.1159  3130236.0  5126781.0 11.39   7.46                   6.62                1797782.0     75.0     87.5     87.5 n<10: không đủ tin cậy
+                 quận/huyện                quận 1                             7  0.9221 38992349.0 47386203.0  8.94   7.19                   3.39               12650394.0     57.1     85.7    100.0 n<10: không đủ tin cậy
+                 quận/huyện        huyện bàu bàng                             5  0.1999  2251620.0  2895218.0 19.21  12.45                   0.01                -587603.0     40.0     60.0     60.0 n<10: không đủ tin cậy
+                 quận/huyện        huyện long đất                             4  0.1711  1846582.0  2990378.0  9.30   5.29                   9.13                1822154.0     50.0     75.0     75.0 n<10: không đủ tin cậy
+                 quận/huyện      thành phố bà rịa                             3 -2.8141  4313523.0  5829493.0 27.93  14.26                  16.05                2146292.0     33.3     66.7     66.7 n<10: không đủ tin cậy
+                 quận/huyện         huyện cần giờ                             2  0.8465  1129861.0  1571805.0  5.60   5.60                   5.47                1092697.0     50.0    100.0    100.0 n<10: không đủ tin cậy
+                 quận/huyện          huyện củ chi                             2  0.9766   301185.0   303718.0  1.70   1.70                   1.70                 301185.0    100.0    100.0    100.0 n<10: không đủ tin cậy
+                 quận/huyện                quận 6                             2  0.9980  2648932.0  3694203.0  1.18   1.18                  -1.07               -2574935.0    100.0    100.0    100.0 n<10: không đủ tin cậy
+                 quận/huyện               quận 11                             1     NaN 52384485.0 52384485.0 18.66  18.66                  18.66               52384485.0      0.0      0.0    100.0 n<10: không đủ tin cậy
+                 quận/huyện       huyện xuyên mộc                             1     NaN   131400.0   131400.0  2.08   2.08                  -2.08                -131400.0    100.0    100.0    100.0 n<10: không đủ tin cậy
+                 quận/huyện        quận phú nhuận                             1     NaN  6617764.0  6617764.0  7.07   7.07                   7.07                6617764.0    100.0    100.0    100.0 n<10: không đủ tin cậy
+
+             mô hình                                                                                                                                                                                                                                                                             tham số chọn  best_iter  MAPE Val  giây (cấu hình chọn)
+       LightGBM (A1) {"objective": "regression", "learning_rate": 0.03, "n_estimators": 12000, "num_leaves": 255, "min_child_samples": 5, "feature_fraction": 0.8, "bagging_fraction": 0.8, "bagging_freq": 1, "lambda_l2": 1.0, "num_threads": 16, "random_state": 42, "verbose": -1, "early_stopping": 200}     3999.0  8.694138                 144.0
+         Hedonic OLS                                                    {"spec": "OLS log1p(đơn giá) ~ ln_dien_tich, ln_mat_tien, ln_chieu_dai, so_mat_tien, ln1p_do_rong_ngo, ln1p_khoang_cach + one-hot Xã/Phường/Thị trấn mới, Vùng, Vị trí trong khung giá, Lợi thế kinh doanh, hinh_dang_sach, Quý_Năm"}        NaN 17.763861                   2.3
+       Random Forest                                                                                                                                                                                                                         {"max_features": 0.33, "min_samples_leaf": 1, "max_depth": null}        NaN 16.767964                  28.2
+HistGradientBoosting                                                                                                                                                                    {"learning_rate": 0.05, "max_leaf_nodes": 255, "min_samples_leaf": 10, "l2_regularization": 0.0, "max_features": 0.8}     3736.0  8.953666                1157.9
+            CatBoost                                                                                                                                                                                                             {"depth": 8, "learning_rate": 0.1, "l2_leaf_reg": 3, "one_hot_max_size": 10}     4997.0 11.867276                 478.1
+
+             mô hình  cấu hình max_features min_samples_leaf max_depth best_iter   giây  MAPE Val learning_rate max_leaf_nodes l2_regularization depth l2_leaf_reg one_hot_max_size
+        RandomForest         0          0.5                2      None      None   31.0 16.816841           NaN            NaN               NaN   NaN         NaN              NaN
+        RandomForest         1          0.2                2      None      None   19.4 19.222064           NaN            NaN               NaN   NaN         NaN              NaN
+        RandomForest         2         0.33                5      None      None   21.4 20.095449           NaN            NaN               NaN   NaN         NaN              NaN
+        RandomForest         3          0.5                5      None      None   32.0 18.858593           NaN            NaN               NaN   NaN         NaN              NaN
+        RandomForest         4         sqrt                5      None      None    6.0 32.321984           NaN            NaN               NaN   NaN         NaN              NaN
+        RandomForest         5         0.33                1      None      None   28.2 16.767964           NaN            NaN               NaN   NaN         NaN              NaN
+HistGradientBoosting         0          0.8               20       NaN      5000  349.3  9.353857           0.1             31               0.0   NaN         NaN              NaN
+HistGradientBoosting         1          0.5               20       NaN      5000  330.1  9.567623          0.05             31               1.0   NaN         NaN              NaN
+HistGradientBoosting         2          0.5                5       NaN      1825  577.1  9.166879           0.1            255               0.0   NaN         NaN              NaN
+HistGradientBoosting         3          0.8               20       NaN      5000  521.8  9.103883          0.05             63               1.0   NaN         NaN              NaN
+HistGradientBoosting         4          0.8               10       NaN      3736 1157.9  8.953666          0.05            255               0.0   NaN         NaN              NaN
+HistGradientBoosting         5          1.0               20       NaN      1468  512.6  9.123178           0.1            255               1.0   NaN         NaN              NaN
+            CatBoost         0          NaN              NaN       NaN      5000  489.2 12.238959           0.1            NaN               NaN     8          10               10
+            CatBoost         1          NaN              NaN       NaN      4997  478.1 11.867276           0.1            NaN               NaN     8           3               10
+            CatBoost         2          NaN              NaN       NaN      5000  321.7 13.487184          0.05            NaN               NaN     6           3               10
+            CatBoost         3          NaN              NaN       NaN      5000  270.4 13.069113           0.1            NaN               NaN     6          10               10
+            CatBoost         4          NaN              NaN       NaN      5000  491.0 11.951193           0.1            NaN               NaN     8           3                4
+            CatBoost         5          NaN              NaN       NaN      5000  288.9 13.276891           0.1            NaN               NaN     6          10                4
+
+                                                     mục                                                                                                                                                                                                                   giá trị
+                                                  đặc tả OLS log1p(đơn giá) ~ ln_dien_tich, ln_mat_tien, ln_chieu_dai, so_mat_tien, ln1p_do_rong_ngo, ln1p_khoang_cach + one-hot Xã/Phường/Thị trấn mới, Vùng, Vị trí trong khung giá, Lợi thế kinh doanh, hinh_dang_sach, Quý_Năm
+                                                    n, k                                                                                                                                                                                                                34772, 234
+                                   R2 (thang log, train)                                                                                                                                                                                                                    0.9217
+                        cột bị bỏ do cộng tuyến hoàn hảo                                                                                                                                                                                                                   (không)
+                                          mức tham chiếu                                     {"Xã/Phường/Thị trấn mới": "phường thới hòa", "Vùng": "hcm1", "Vị trí trong khung giá": "vt1", "Lợi thế kinh doanh": "trung bình", "hinh_dang_sach": "cân đối", "Quý_Năm": "q3-2025"}
+dòng test có mức chưa gặp trong train (gán = tham chiếu)                                                                                         {"Xã/Phường/Thị trấn mới": 0, "Vùng": 0, "Vị trí trong khung giá": 0, "Lợi thế kinh doanh": 0, "hinh_dang_sach": 0, "Quý_Năm": 0}
+in_tr: 62 | test Quý_Năm: <ArrowStringArray>
+['q2-2026']
+Length: 1, dtype: str

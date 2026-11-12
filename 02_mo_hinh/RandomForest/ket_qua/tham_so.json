@@ -1,0 +1,12 @@
+{
+  "mo_hinh": "Random Forest",
+  "nguon": "02_mo_hinh/checkpoints/m_rf.joblib (sinh bởi 02_mo_hinh/chay_mo_hinh.py)",
+  "tham_so_chon": {
+    "max_features": 0.33,
+    "min_samples_leaf": 1,
+    "max_depth": null
+  },
+  "best_iter": null,
+  "giay_huan_luyen": 28.2,
+  "cau_hinh_chon": 5
+}

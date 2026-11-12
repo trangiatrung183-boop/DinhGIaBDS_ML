@@ -1,0 +1,201 @@
+{
+  "name": "HCM_A1",
+  "base_version": "A (A/pipeline_HCM_A.ipynb)",
+  "region": "Thành phố Hồ Chí Minh",
+  "model": "LightGBM",
+  "created_at": "2026-11-11T19:01:35",
+  "target": "Đơn giá quyền sử dụng đất (đ/m2)1",
+  "target_transform": "log1p",
+  "n_features": 646,
+  "cat_features": [
+    "Xã/Phường/Thị trấn mới",
+    "Vùng",
+    "Đường phố",
+    "Vị trí trong khung giá",
+    "Quý_Năm",
+    "Lợi thế kinh doanh",
+    "hinh_dang_sach"
+  ],
+  "num_features": [
+    "Diện tích (m2)",
+    "Kích thước mặt tiền (m)",
+    "Kích thước chiều dài",
+    "Số mặt tiền tiếp giáp",
+    "Độ rộng ngõ/ngách nhỏ nhất (Từ đường chính đến BĐS)",
+    "Khoảng cách đến đường chính (m)"
+  ],
+  "excluded_cols": {
+    "tính từ đơn giá": [
+      "Don_gia_TB",
+      "Min",
+      "Max",
+      "Độ lệch chuẩn",
+      "Số lượng mẫu"
+    ],
+    "chỉ số": [
+      "Chi_so_ngo",
+      "Chi_so_dientich",
+      "Chi_so_hinhdang"
+    ],
+    "cờ True/False": [
+      "la_hem",
+      "co_mat_tien",
+      "chi_la_mat_tien",
+      "la_so_nha",
+      "co_bang_chung_mat_tien",
+      "da_sua_vt_theo_mat_tien",
+      "kc_thieu_du_lieu",
+      "da_sua_kich_thuoc",
+      "canh_bao_vt1",
+      "canh_bao_mt_vt234"
+    ],
+    "thay bằng hinh_dang_sach": [
+      "Hình dáng"
+    ],
+    "tỷ lệ (chỉ để quan sát)": [
+      "ty_le_kt_dt",
+      "ty_le_dai_rong"
+    ],
+    "A cũng không dùng": [
+      "Thành phố/Quận/Huyện/Thị xã",
+      "Ghep",
+      "Đoạn đường",
+      "Mã tài sản",
+      "Tháng"
+    ]
+  },
+  "lightgbm_params": {
+    "objective": "regression",
+    "learning_rate": 0.03,
+    "n_estimators": 12000,
+    "num_leaves": 255,
+    "min_child_samples": 5,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "num_threads": 16,
+    "random_state": 42,
+    "verbose": -1
+  },
+  "early_stopping": 200,
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "n_train": 34772,
+    "n_val": 8694,
+    "n_test": 693
+  },
+  "results": {
+    "secs": 99.3,
+    "best_iter": 3999,
+    "metrics": [
+      {
+        "tập": "Train",
+        "n": 34772,
+        "R2": 0.9998044881874047,
+        "MAPE": 0.8872327315587365,
+        "RMSE": 1213278.859570285,
+        "APE<10%": 99.14011273438399,
+        "APE<15%": 99.47659036005982
+      },
+      {
+        "tập": "Val",
+        "n": 8694,
+        "R2": 0.9299085232931563,
+        "MAPE": 8.694137803013641,
+        "RMSE": 24208367.886049278,
+        "APE<10%": 71.19852772026685,
+        "APE<15%": 83.72440763745111
+      },
+      {
+        "tập": "Test",
+        "n": 693,
+        "R2": 0.9492070011039734,
+        "MAPE": 9.514690685748706,
+        "RMSE": 17699782.63535,
+        "APE<10%": 64.06926406926407,
+        "APE<15%": 79.07647907647907
+      }
+    ],
+    "metrics_by_region": [
+      {
+        "tập": "Train",
+        "vùng": "HCM1",
+        "n": 22294,
+        "R2": 0.9997821324354398,
+        "MAPE": 0.6550027837144874,
+        "RMSE": 1389508.8509566642,
+        "APE<10%": 99.98205795281243,
+        "APE<15%": 100.0
+      },
+      {
+        "tập": "Train",
+        "vùng": "HCM2",
+        "n": 12478,
+        "R2": 0.9990188035184466,
+        "MAPE": 1.3021497420764228,
+        "RMSE": 807788.1947852885,
+        "APE<10%": 97.63583907677513,
+        "APE<15%": 98.54143292194262
+      },
+      {
+        "tập": "Val",
+        "vùng": "HCM1",
+        "n": 5575,
+        "R2": 0.9124203324836281,
+        "MAPE": 7.725816001516693,
+        "RMSE": 29545931.411954165,
+        "APE<10%": 74.72645739910314,
+        "APE<15%": 87.12107623318386
+      },
+      {
+        "tập": "Val",
+        "vùng": "HCM2",
+        "n": 3119,
+        "R2": 0.9049845847426378,
+        "MAPE": 10.424947050639636,
+        "RMSE": 8555729.589349745,
+        "APE<10%": 64.89259378005771,
+        "APE<15%": 77.65309394036551
+      },
+      {
+        "tập": "Test",
+        "vùng": "HCM1",
+        "n": 435,
+        "R2": 0.9348312040685998,
+        "MAPE": 8.6714670381905,
+        "RMSE": 21689871.75793041,
+        "APE<10%": 67.81609195402298,
+        "APE<15%": 82.5287356321839
+      },
+      {
+        "tập": "Test",
+        "vùng": "HCM2",
+        "n": 258,
+        "R2": 0.9226039193690803,
+        "MAPE": 10.93640497523638,
+        "RMSE": 6949054.382952993,
+        "APE<10%": 57.751937984496124,
+        "APE<15%": 73.25581395348837
+      }
+    ]
+  },
+  "sources": {
+    "train_HCM_3_clean.xlsx": {
+      "sha1": "db8e44de36e78b6357562aabaf16bd4514e4ee58",
+      "rows": 43466
+    },
+    "tstd_HCM_3_clean.xlsx": {
+      "sha1": "15674585d678a7afba17cd69aaef24768f6127b4",
+      "rows": 693
+    }
+  },
+  "env": {
+    "python": "3.14.4",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "sklearn": "1.9.0",
+    "lightgbm": "4.7.0"
+  }
+}

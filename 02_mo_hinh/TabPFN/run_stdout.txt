@@ -1,0 +1,10 @@
+[20:24:20] MAIN · cấu hình {"N_CTX": 10000, "N_SUB": 3, "N_EST": 8, "BATCH": 512, "VAL_SUB": 2000, "TE_SMOOTH": 20, "TE_FOLDS": 5, "model": "TabPFN v2 (Prior-Labs/TabPFN-v2-reg)"}
+[20:35:33] main_10000 tập con 1/3: ngữ cảnh 10000 dòng, dự đoán 2693 dòng, 664.1s, VRAM đỉnh 3.17 GB, RAM tiến trình 1.85 GB
+[20:46:46] main_10000 tập con 2/3: ngữ cảnh 10000 dòng, dự đoán 2693 dòng, 672.6s, VRAM đỉnh 3.17 GB, RAM tiến trình 0.87 GB
+[20:57:42] main_10000 tập con 3/3: ngữ cảnh 10000 dòng, dự đoán 2693 dòng, 656.6s, VRAM đỉnh 3.17 GB, RAM tiến trình 0.84 GB
+[20:57:42] TabPFN chính: Val(mẫu 2000) MAPE 12.70% · Test MAPE 12.33%
+[21:01:09] oot_10000 tập con 1/3: ngữ cảnh 10000 dòng, dự đoán 693 dòng, 206.6s, VRAM đỉnh 2.86 GB, RAM tiến trình 1.04 GB
+[21:04:11] oot_10000 tập con 2/3: ngữ cảnh 10000 dòng, dự đoán 693 dòng, 181.3s, VRAM đỉnh 3.17 GB, RAM tiến trình 1.03 GB
+[21:07:40] oot_10000 tập con 3/3: ngữ cảnh 10000 dòng, dự đoán 693 dòng, 209.0s, VRAM đỉnh 3.17 GB, RAM tiến trình 1.04 GB
+[21:07:40] TabPFN ngoài thời gian: tstd MAPE 13.89%
+[21:07:40] XONG main

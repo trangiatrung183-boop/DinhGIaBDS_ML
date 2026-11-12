@@ -1,0 +1,21 @@
+{
+  "mo_hinh": "LightGBM (A1)",
+  "nguon": "02_mo_hinh/checkpoints/m_lightgbm.joblib (sinh bởi 02_mo_hinh/chay_mo_hinh.py)",
+  "tham_so_chon": {
+    "objective": "regression",
+    "learning_rate": 0.03,
+    "n_estimators": 12000,
+    "num_leaves": 255,
+    "min_child_samples": 5,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "num_threads": 16,
+    "random_state": 42,
+    "verbose": -1,
+    "early_stopping": 200
+  },
+  "best_iter": 3999,
+  "giay_huan_luyen": 144.0
+}

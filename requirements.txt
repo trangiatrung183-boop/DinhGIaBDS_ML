@@ -1,0 +1,21 @@
+# Đã chạy với Python 3.14.4 (Windows 11). Phiên bản ghi bên phải là bản đã dùng.
+
+# Dữ liệu + làm sạch (01_lam_sach)
+pandas>=3.0          # 3.0.5
+numpy>=2.0           # 2.5.2
+openpyxl>=3.1        # 3.1.5
+nbformat>=5.7        # 5.11.1 — để %run nạp được lam_sach.ipynb
+ipykernel            # 7.3.0
+
+# Mô hình + so sánh (02_mo_hinh, 03_so_sanh)
+scipy>=1.11          # 1.17.1
+scikit-learn>=1.6    # 1.9.0 — RandomForest, HistGradientBoosting, TF-IDF/SVD
+lightgbm>=4.0        # 4.7.0
+catboost>=1.2        # 1.2.10
+joblib>=1.3          # 1.5.3
+matplotlib>=3.8      # 3.11.1
+
+# TabPFN (tuỳ chọn, cần GPU CUDA). Cài torch theo hướng dẫn tại pytorch.org cho đúng bản CUDA.
+# tabpfn==9.2.0
+# torch              # 2.13.0+cu126
+# psutil             # 7.2.2

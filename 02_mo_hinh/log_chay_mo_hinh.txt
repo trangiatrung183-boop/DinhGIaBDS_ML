@@ -1,0 +1,13 @@
+[23:53:56] Đặc trưng: 646 | train 34772 · val 8694 · test 693
+[23:56:21] LightGBM A1: 144.0s, best_iter 3999 (manifest 3999) | Test R2 0.9492 (manifest 0.9492) MAPE 9.51% (manifest 9.51%)
+[23:56:23] Hedonic OLS: k=234 biến, bỏ 0 cột cộng tuyến, R2(log, train)=0.922 | Val MAPE 17.76% · Test MAPE 15.79%
+[23:58:44] Random Forest: chọn {'max_features': 0.33, 'min_samples_leaf': 1, 'max_depth': None} theo Val | Val MAPE 16.77% · Test MAPE 16.52%
+[00:56:15] HistGradientBoosting: chọn {'learning_rate': 0.05, 'max_leaf_nodes': 255, 'min_samples_leaf': 10, 'l2_regularization': 0.0, 'max_features': 0.8}, best_iter 3736 | Val MAPE 8.95% · Test MAPE 9.77%
+[01:35:16] CatBoost: chọn {'depth': 8, 'learning_rate': 0.1, 'l2_leaf_reg': 3, 'one_hot_max_size': 10}, best_iter 4997 | Val MAPE 11.87% · Test MAPE 11.93%
+[01:35:16] Mô hình tốt nhất còn lại (theo Val MAPE): HistGradientBoosting
+[01:37:23] Ngoài thời gian LightGBM: train 32436 dòng (≠q2-2026), best_iter 3680 | tstd MAPE 11.97%
+[01:59:19] Ngoài thời gian HistGradientBoosting: tstd MAPE 11.53%
+[02:00:09] Bỏ biến a_bo_ChiTiet_YeuToKhac: 13 đặc trưng, best_iter 3186 | Val MAPE 9.49% · Test MAPE 10.01%
+[02:01:19] Bỏ biến b_bo_DuongPho: 645 đặc trưng, best_iter 3289 | Val MAPE 10.17% · Test MAPE 10.30%
+[02:01:38] Bỏ biến c_bo_ChiTiet_YeuToKhac_DuongPho: 12 đặc trưng, best_iter 2258 | Val MAPE 11.28% · Test MAPE 11.04%
+[02:01:38] XONG chay_mo_hinh.py
